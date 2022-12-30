@@ -8,9 +8,8 @@ Note: Record the script with help of Blaze meter
 ```
 ![abc](https://user-images.githubusercontent.com/88279523/210043345-12754a2c-fccb-4e65-8b89-f5dd754da665.png)
 
-```js
-Note: In the Thread group I have given the multiple users as 10 and should set the ramp up seconds – the times that takes to login one by one users  
-```
+##### Note: In the Thread group I have given the multiple users as 10 and should set the ramp up seconds – the times that takes to login one by one users  
+
 ### 3.J-meter (Sidebar)
 ![thread (1)](https://user-images.githubusercontent.com/88279523/210039059-f892cc84-d1e1-4e4c-b5fc-ad4f5aca5893.png)
 
@@ -49,15 +48,18 @@ Comments: e.g. Will Execute Only if BearerToken Generated Successfully
 
 ##### It is a sampler that lets you send an HTTP/HTTPS request to a web server for load testing. 
 
+```js
 HTTP Request: 
 * We have to set the parameter in all the HTTP Request  
 * Set the variable as po number so that po number will be taken from the csv file 
+```
 ### 8.HTTP Header Manager 
 ![auth](https://user-images.githubusercontent.com/88279523/210039458-fb344868-3eb1-46a3-8902-9854cba80d3c.png)
 
 ##### HTTP headers that are sent to the server from the browser in use for scenerio recording. 
-
+```js
 After setting the Regular expression exactor we have to set the bearer Token as Authorization ${BearerToken} inside each and every API 
+```
 ### 9.Selecting Po and Confirm Po 
 ![select](https://user-images.githubusercontent.com/88279523/210039530-bf0ce5cf-5f05-48e6-956d-c85a02a8d392.png)
 
