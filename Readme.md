@@ -5,9 +5,10 @@ Performance Testing is the process of analysing the quality and capability of th
 The Recorded Script we have to open the jmx file into the Apache J meter 
 #### Note: Record the script with help of Blaze meter 
 ![abc](https://user-images.githubusercontent.com/88279523/210043345-12754a2c-fccb-4e65-8b89-f5dd754da665.png)
-#### Note: In the Thread group I have given the multiple users as 10 and    should set the ramp up seconds – the times that takes to login one by one users  
+#### Note: In the Thread group I have given the multiple users as 10 and should set the ramp up seconds – the times that takes to login one by one users  
 ### 3.J-meter (Sidebar)
 ![thread (1)](https://user-images.githubusercontent.com/88279523/210039059-f892cc84-d1e1-4e4c-b5fc-ad4f5aca5893.png)
+
 Thread group holds the controllers, samplers, config elements also the listeners 
 Under the Thread Group we can find the  
 * Transaction Controller – Used to group multiple sampler request into one. 
