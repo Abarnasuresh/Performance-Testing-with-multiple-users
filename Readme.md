@@ -19,7 +19,7 @@ In the Login API we used ”post”, the body data as email and password which a
 ![rr](https://user-images.githubusercontent.com/88279523/210039250-a4e9436e-45d0-4ed5-841f-a364e0fa51c6.png)
 It is post processor that can be used to apply regex on response data. 
 
-In the Login Http request we have to add ==> Post processors==> Regular Expression Extractor 
+##### In the Login Http request we have to add ==> Post processors==> Regular Expression Extractor 
 Inside the login API in the field of response header we will set as: 
 * Name of the variable: we can set any variable name in the given field BearerToken 
 * Regular expression: authorization: (.*) 
@@ -28,7 +28,7 @@ Inside the login API in the field of response header we will set as:
 * Default value: Not found 
 ### 6.If Controller 
 ![if](https://user-images.githubusercontent.com/88279523/210039327-e960c8e1-a438-4172-9b09-1da2bd842840.png)
-It allows to determine whether or not to run a batch of child samplers, according to certain conditions. 
+##### It allows to determine whether or not to run a batch of child samplers, according to certain conditions. 
 
 Set the: 
 Name: e.g. Login Successfully 
@@ -36,7 +36,7 @@ Comments: e.g. Will Execute Only if BearerToken Generated Successfully
 * Set the condition as ("${BearerToken}")!="NOT FOUND"
 ### 7.HTTP Request 
 ![po](https://user-images.githubusercontent.com/88279523/210039391-0c2619e3-0160-4a51-829a-2faf114cb02f.png)
-It is a sampler that lets you send an HTTP/HTTPS request to a web server for load testing. 
+##### It is a sampler that lets you send an HTTP/HTTPS request to a web server for load testing. 
 
 HTTP Request: 
 * We have to set the parameter in all the HTTP Request  
