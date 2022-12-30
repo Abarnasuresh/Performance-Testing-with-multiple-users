@@ -57,23 +57,25 @@ HTTP Request:
 ![auth](https://user-images.githubusercontent.com/88279523/210039458-fb344868-3eb1-46a3-8902-9854cba80d3c.png)
 
 ##### HTTP headers that are sent to the server from the browser in use for scenerio recording. 
-```js
+
 After setting the Regular expression exactor we have to set the bearer Token as Authorization ${BearerToken} inside each and every API 
-```
+
 ### 9.Selecting Po and Confirm Po 
 ![select](https://user-images.githubusercontent.com/88279523/210039530-bf0ce5cf-5f05-48e6-956d-c85a02a8d392.png)
-
+```js
 Select Po and Confirm: 
 * Set the variable name as ${po_number} wherever the po number is mentioned so that each of the po number will be taken from the csv file  
 
-* Set the variable name as ${qty} wherever the quantity is mentioned so that each of the quantity will be taken from the csv file	 
+* Set the variable name as ${qty} wherever the quantity is mentioned so that each of the quantity will be taken from the csv file	
+``` 
 ### 10.Creating ASN(Shipment)
 ![create](https://user-images.githubusercontent.com/88279523/210039583-84b3e6de-7cef-4b86-aee4-183a20732c83.png)
-
+```js
 Create ASN(Shipment): 
 * Set the variable name as ${po_number} wherever the po number is mentioned so that each of the po number will be taken from the csv file  
 
 * Set the variable name as ${qty} wherever the quantity is mentioned so that each of the quantity will be taken from the csv file	 
+```
 ### 11.CSV Data set Config 
 ![hh](https://user-images.githubusercontent.com/88279523/210039709-b7e7312c-0d03-43c8-80e2-a38f414dbfa0.png)
 
