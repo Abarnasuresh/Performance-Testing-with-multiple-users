@@ -80,4 +80,22 @@ Under the Thread group we can
 * Red Colour indicates the script is getting error  
 * Can view request along with the response parameter 
 ### 14.View Results in Table 
-![table](https://user-images.githubusercontent.com/88279523/210040012-213dde2d-f083-48bd-b9fb-93354bb856ac.png)
+![tree (1)](https://user-images.githubusercontent.com/88279523/210043058-54fae17e-a4e2-4e4c-a94f-b4c045af8a26.png)
+Under the Thread group we can  
+
+##### add ==> Listeners=> view results in table 
+
+To view the results in the table structure 
+* START TIME – we can see the start time of each user  
+* THREADNAME – It is nothing but the thread group name which we give 
+* LABEL – label is nothing but the request name  
+* SAMPLE TIME – Sample time is nothing but millisecond how much time it takes  
+* STATUS – Proper response – will indicates the green colour Invalid response indicates – red colour  
+* BYTES – Amount of data receive ==> response  
+* SENT BYTES – amount of data sent ==>Request 
+* LATENCY – time from before sending the request to just after receiving the first part of the response  
+* CONNECT TIME – time taken to connect to the server 
+### 15.Debug Sampler 
+![debug](https://user-images.githubusercontent.com/88279523/210043260-e77c91fa-c5df-4023-8580-5654eccd4eae.png)
+Debug Sampler: 
+##### Debug Sampler help us to see variable values in the “View Results Tree” 
