@@ -26,3 +26,58 @@ Inside the login API in the field of response header we will set as:
 * Template: $1$  
 * Match No: 0 If we give 0 the random values will be taken 
 * Default value: Not found 
+### 6.If Controller 
+![if](https://user-images.githubusercontent.com/88279523/210039327-e960c8e1-a438-4172-9b09-1da2bd842840.png)
+It allows to determine whether or not to run a batch of child samplers, according to certain conditions. 
+
+Set the: 
+Name: e.g. Login Successfully 
+Comments: e.g. Will Execute Only if BearerToken Generated Successfully 
+* Set the condition as ("${BearerToken}")!="NOT FOUND"
+### 7.HTTP Request 
+![po](https://user-images.githubusercontent.com/88279523/210039391-0c2619e3-0160-4a51-829a-2faf114cb02f.png)
+It is a sampler that lets you send an HTTP/HTTPS request to a web server for load testing. 
+
+HTTP Request: 
+* We have to set the parameter in all the HTTP Request  
+* Set the variable as po number so that po number will be taken from the csv file 
+### 8.HTTP Header Manager 
+![auth](https://user-images.githubusercontent.com/88279523/210039458-fb344868-3eb1-46a3-8902-9854cba80d3c.png)
+##### HTTP headers that are sent to the server from the browser in use for scenerio recording. 
+
+After setting the Regular expression exactor we have to set the bearer Token as Authorization ${BearerToken} inside each and every API 
+### 9.Selecting Po and Confirm Po 
+![select](https://user-images.githubusercontent.com/88279523/210039530-bf0ce5cf-5f05-48e6-956d-c85a02a8d392.png)
+Select Po and Confirm: 
+* Set the variable name as ${po_number} wherever the po number is mentioned so that each of the po number will be taken from the csv file  
+
+* Set the variable name as ${qty} wherever the quantity is mentioned so that each of the quantity will be taken from the csv file	 
+### 10.Creating ASN(Shipment)
+![create](https://user-images.githubusercontent.com/88279523/210039583-84b3e6de-7cef-4b86-aee4-183a20732c83.png)
+Create ASN(Shipment): 
+* Set the variable name as ${po_number} wherever the po number is mentioned so that each of the po number will be taken from the csv file  
+
+* Set the variable name as ${qty} wherever the quantity is mentioned so that each of the quantity will be taken from the csv file	 
+### 11.CSV Data set Config 
+![hh](https://user-images.githubusercontent.com/88279523/210039709-b7e7312c-0d03-43c8-80e2-a38f414dbfa0.png)
+Under the Test plan we have to add the ==> Config element ==> Csv data set config
+![csv](https://user-images.githubusercontent.com/88279523/210039739-880e0bc8-d8b9-4324-88de-925c34a6adfe.png)
+In the csv data set Config, we have to add: 
+
+* File name: Set the file name with the path  
+* File encoding: -  
+* Variable name: email, password, po_number, qty (as we set the email, password, po_number, qty variable which we set on the csv file) 
+### 12.Csv File with Multiple users 
+![cc](https://user-images.githubusercontent.com/88279523/210039786-07e5c54b-d2e7-49b3-befd-4febdb8aa2a3.png)
+For the Multiple user we have create the csv file and give multiple Users, Password, Po Number, qty 
+### 13.View Results in Tree 
+![table](https://user-images.githubusercontent.com/88279523/210039825-38a57285-ad4d-4c37-8cc1-15cf9098fab2.png)
+Under the Thread group we can  
+##### add ==> Listeners=> view results in tree 
+
+* To view the results in the tree structure  
+* Green colour indicates the script run successfully 
+* Red Colour indicates the script is getting error  
+* Can view request along with the response parameter 
+### 14.View Results in Table 
+![table](https://user-images.githubusercontent.com/88279523/210040012-213dde2d-f083-48bd-b9fb-93354bb856ac.png)
