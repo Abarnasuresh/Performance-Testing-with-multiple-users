@@ -3,7 +3,9 @@
 Performance Testing is the process of analysing the quality and capability of the product, in this method we can see the system performance in speed, stability under varying workload. 
 ### 2.Thread Group 
 The Recorded Script we have to open the jmx file into the Apache J meter 
+```js
 #### Note: Record the script with help of Blaze meter 
+```
 ![abc](https://user-images.githubusercontent.com/88279523/210043345-12754a2c-fccb-4e65-8b89-f5dd754da665.png)
 
 #### Note: In the Thread group I have given the multiple users as 10 and should set the ramp up seconds – the times that takes to login one by one users  
